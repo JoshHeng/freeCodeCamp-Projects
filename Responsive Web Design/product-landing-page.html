@@ -1,0 +1,160 @@
+<html>
+    <head>
+        <title>Product Landing Page</title>
+        <link href="https://fonts.googleapis.com/css?family=Gudea|Poiret+One&display=swap" rel="stylesheet"> 
+
+        <style>
+            body {
+                background-color: #c4c4f5;
+                font-family: 'Poiret One', cursive;
+                margin: 0;
+            }
+            h1, h2, h3 {
+                font-family: 'Gudea', sans-serif;
+            }
+            section {
+                margin: 2rem 1rem;
+            }
+            form {
+                font-size: 1.3rem;
+            }
+            input {
+                background-color: #c0da97;
+                border: 0.2rem solid #92a772;
+                border-radius: 0.2rem; 
+                padding: 0.2rem 0.5rem;
+            }
+            input[type=email] {
+                width: 15rem;
+            }
+            img {
+                object-fit: contain;
+            }
+            header {
+                background-color: #a73d3d;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                position: fixed;
+                top: 0;
+                width: 100vw;
+                height: 5rem;
+            }
+            main {
+                padding-top: 6rem;
+            }
+            nav li, nav li a {
+                color: white;
+                float: left;
+                margin-left: 0.5rem;
+                list-style: none;
+                text-decoration: none;
+            }
+            nav li a:hover {
+                color: #eeeeee;
+            }
+            #logo {
+                display: flex;
+            }
+            #logo img {
+                margin-right: 1rem;
+                width: 5rem;
+            }
+            #content {
+                margin: 1rem auto;
+                max-width: 60rem;
+                text-align: center;
+            }
+
+            #products {
+                display: flex;
+                align-items: stretch;
+                justify-content: center;
+            }
+            .product {
+                background-color: #c0da97;
+                border: 0.2rem solid #92a772;
+                border-radius: 0.2rem; 
+                padding: 0.3rem;
+                margin: 0.5rem 1rem;
+                width: 15rem;
+            }
+            .product img {
+                max-width: 90%;
+            }
+
+            iframe {
+                height: 30rem;
+                width: 45rem;
+            }
+            @media only screen and (max-width: 48rem) {
+                iframe {
+                    height: 15rem;
+                    width: 22.5rem;
+                }
+            }
+        </style>
+    </head>
+
+    <body id="main">
+        <header id="header">
+            <div id="logo">
+                <img id="header-img" src="https://i.pinimg.com/originals/f8/2f/8f/f82f8f24633a76f5893ebbbf79f3c5ae.png" alt="Amazing Sandwiches logo">
+                <h1>Amazing Sandwiches</h1>
+            </div>
+            <nav id="nav-bar">
+                <ul>
+                    <li><a href="#summary-section" class="nav-link">Summary</a></li>
+                    <li><a href="#products-section" class="nav-link">Products</a></li>
+                    <li><a href="#video-section" class="nav-link">Video</a></li>
+                    <li><a href="#contact-section"class="nav-link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div id="content">
+            <main>
+                <section id="summary-section">
+                    Welcome to Amazing Sandwiches! We provide delicious, nutritious sandwiches at a great value!
+                </section>
+
+                <section id="products-section">
+                    <h2>Our Sandwiches</h2>
+                    <div id="products">
+                        <div class="product">
+                            <h3>The Grand</h3>
+                            <img src="https://realfood.tesco.com/media/images/RFO-1400x919-ChickenClubSandwich-0ee77c05-5a77-49ac-a3bd-4d45e3b4dca7-0-1400x919.jpg" alt="The Normal sandwich">
+                            <p>Our biggest sandwich, featuring all of our delicious flavourings.</p>
+                        </div>
+                        <div class="product">
+                            <h3>The Normal</h3>
+                            <img src="https://img.taste.com.au/OX2Wle32/taste/2016/11/marinated-chicken-club-sandwich-1970-1.jpeg" alt="The Grand sandwich">
+                            <p>An average sized sandwich along with a free salad.</p>
+                        </div>
+                        <div class="product">
+                            <h3>The Petit</h3>
+                            <img src="https://images-gmi-pmc.edge-generalmills.com/7eb09e32-fb06-4a34-97e6-def91b62164f.jpg" alt="The Petit sandwich">
+                            <p>The smallest, but not to be overlooked!</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="video-section">
+                    <iframe id="video" src="https://www.youtube.com/embed/rFud8EWW-T4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </section>
+
+                <section id="contact-section">
+                    <h2>Contact</h2>
+                    <form id="form" action="https://www.freecodecamp.com/email-submit">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+
+                        <input type="submit" id="submit" value="Submit">
+                    </form>
+                </section>
+            </main>
+        <div>
+
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>
