@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>Joshua Heng</title>
+        <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet"> 
+
+        <style>
+            body {
+                background-color: #460955;
+                color: #e6e6e6;
+                font-family: 'Muli', sans-serif;
+                margin: 0;
+            }
+            header {
+                align-items: center;
+                background-color: #383838;
+                display: flex;
+                justify-content: space-between;
+                position: fixed;
+                top: 0;
+                width: 100%;
+            }
+            header div, header nav {
+                margin: 0.2rem 2rem;
+            }
+            @media only screen and (max-width: 40rem) {
+                header nav {
+                    display: none;
+                }
+            }
+            header nav ul li, header nav ul li a {
+                color: #ffffff;
+                float: left;
+                height: 2rem;
+                list-style-type: none;
+                margin: 0 0.3rem;
+                text-decoration: none;
+            }
+            header nav ul li a:hover {
+                color: #e0e0e0;
+            }
+            main {
+                margin-top: 4rem;
+                text-align: center;
+            }
+            section {
+                padding: 1rem;
+            }
+            #welcome-section {
+                height: calc(100vh - 2rem);
+                font-size: 3em;
+            }
+            #welcome-section img {
+                border-radius: 50%;
+                box-shadow: 0.3rem 0.3rem #000000;
+                object-fit: contain;
+                height: 15rem;
+            }
+            #profile-link img {
+                border-radius: 0.3rem;
+                height: 2.5rem;
+                object-fit: contain;
+            }
+            #projects-list {
+                display: flex;
+                justify-content: center;
+            }
+            .project-tile {
+                background-color: #6b0036;
+                height: 12rem;
+                border-radius: 0.5rem;
+                padding: 1rem;
+            }
+            .project-tile a {
+                display: block;
+                background-color: #1b0f53;
+                border-radius: 0.2rem;
+                box-shadow: 0.1rem 0.1rem #11082c;
+                color: #ffffff;
+                margin-top: 2rem;
+                padding: 0.5rem 1.2rem;
+                text-decoration: none;
+            }
+            .project-tile a:hover {
+                color: #e0e0e0;
+            }
+        </style>
+    </head>
+
+    <body id="main">
+        <header>
+            <div>Josh Heng</div>
+            <div>
+                <a href="https://www.github.com/JoshHeng" target="_blank" id="profile-link"><img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub logo"></a>
+            </div>
+            <nav id="navbar">
+                <ul>
+                    <li><a href="#welcome-section">Welcome</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section id="welcome-section">
+                <h1>Josh Heng</h1>
+                <p>Welcome</p>
+                <img src="https://www.joshheng.co.uk/images/profile-picture.jpg" alt="Josh Heng">
+            </section>
+            
+            <section id="projects">
+                <h2>Projects</h2>
+                <div id="projects-list">
+                    <div class="project-tile">
+                        <h3>Personal Website</h3>
+                        <p>My personal website, featuring all of my latest projects.</p>
+                        <a class="profile-link" href="https://joshheng.co.uk" target="_blank">Visit</a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </body>
+</html>

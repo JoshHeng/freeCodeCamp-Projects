@@ -7,28 +7,147 @@
             body {
                 background-color: #efefef;
                 font-family: 'Roboto', sans-serif;
+                margin: 0;
+            }
+            code {
+                white-space: pre;
+            }
+            #navbar {
+                background-color: #e2e2e2;
+                float: left;
+                height: 100vh;
+                padding: 1rem;
+                position: fixed;
+                top: 0;
+                width: 15rem;
+            }
+            #navbar ul {
+                font-size: 1.2em;
+                padding: 0.5rem;
+            }
+            #navbar li, #navbar li a {
+                color: #026322;
+                list-style-type: none;
+                margin-bottom: 0.5rem;
+                text-decoration: none;
+            }
+            main {
+                margin-left: 18rem;
+            }
+            @media only screen and (max-width: 45rem) {
+                #navbar {
+                    display: none;
+                }
+                main {
+                    margin-left: 0rem;
+                }
+            }
+            header {
+                font-size: 1.4em;
+                font-weight: bold;
+            }
+            section {
+                margin-bottom: 2rem;
             }
         </style>
     </head>
 
     <body id="main">
-        <header id="header">
-        </header>
+        <nav id="navbar">
+            <header>
+                A Quick Summary of Python 3.7
+            </header>
+            <ul>
+                <li><a href="#introduction" class="nav-link">Introduction</a></li>
+                <li><a href="#variables" class="nav-link">Variables</a></li>
+                <li><a href="#input_and_output" class="nav-link">Input and Output</a></li>
+                <li><a href="#mathematical_operators" class="nav-link">Mathematical Operators</a></li>
+                <li><a href="#if_statements" class="nav-link">IF Statements</a></li>
+            </ul>
+        </nav>
 
         <main id="main-doc">
-            <section id="test" class="main-section">
-                <header>
-                    <h2>Some text</h2>
-                </header>
+            <h1>A Quick Summary of Python 3.7</h1>
+            <section id="introduction" class="main-section">
+                <header>Introduction</header>
                 <p>
-                    Some text can go here
+                    Python is a high-level, interpreted programming language which is rising in popularity, especially amongst schools. The syntax is very easy to read, and follows most coding conventions. The example code below accepts a number, and returns the number multipled by 5.
                 </p>
                 <code>
-                    Some code!
+number = int(input("Please enter the number: "))
+result = number * 5
+print("The result is " + result)
                 </code>
+            </section>
+            <section id="variables" class="main-section">
+                <header>Variables</header>
+                <p>
+                    There are several types of variables in Python:
+                </p>
                 <ul>
-                    <li>List!</li>
+                    <li>Strings - text</li>
+                    <li>Integers - whole numbers</li>
+                    <li>Floats - numbers with decimal points</li>
                 </ul>
+                <p>
+                    Converting between different variables is called <strong>casting</strong>. 
+                    You need to do this in Python to convert user-inputted numbers to integers and floats. The syntax for casting to integers is <code>int(<em>string</em>)</code> and the syntax for casting to floats is <code>float(<em>string</em>)</code> a
+                </p>
+                <code>
+integer = int(input("Integer: "))
+float = float(input("Float: "))
+                </code>
+            </section>
+            <section id="input_and_output" class="main-section">
+                <header>Input and Output</header>
+                <p>
+                    The <code>input()</code> function is used to get user input as a string.
+                </p>
+                <p>For example, <code>name = input("Please enter your name")</code> will save the user's name to the <code>name</code> variable.</p>
+                <p>
+                    To output something to the console, use <code>print(<em>string</em>)</code>
+                </p>
+                <p>For example, <code>print("Hello World")</code> will display <code>Hello World</code> in the console.</p>
+            </section>
+            <section id="mathematical_operators" class="main-section">
+                <header>Mathematical Operators</header>
+                <p>
+                    Python features the four common mathematical operators:
+                </p>
+                <ul>
+                    <li>Addition: <code>+</code></li>
+                    <li>Subtraction: <code>-</code></li>
+                    <li>Multiplication: <code>*</code></li>
+                    <li>Division: <code>/</code></li>
+                </ul>
+                <p>
+                    The code below shows examples for each operator.
+                </p>
+                <ul>
+                    <li><code>result = 5 + 5</code> <em>10</em></li>
+                    <li><code>result = 5 - 5</code> <em>0</em></li>
+                    <li><code>result = 5 * 5</code> <em>25</em></li>
+                    <li><code>result = 5 / 5</code> <em>1</em></li>
+                </ul>
+            </section>
+            <section id="if_statements" class="main-section">
+                <header>IF Statements</header>
+                <p>
+                    IF Statements control the flow of code by executing code only if a condition or several conditions are met.
+                </p>
+                <p>
+                    The below code will accept a number from the user, and output if it is higher or lower than 10:
+                </p>
+                <code>
+number = int(input("Please enter a number: "))
+
+if (number < 10):
+    print("This number is less than 10")
+elif (number > 10):
+    print("This number is more than 10")
+else:
+    print("This number is equal to 10")
+                </code>
             </section>
         </main>
 

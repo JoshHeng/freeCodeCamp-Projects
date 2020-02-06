@@ -8,4 +8,5 @@ This repository contains all the [freeCodeCamp](https://www.freecodecamp.org/lea
   * [Tribute Page](/responsive-web-design/tribute-page.html)
   * [Survey Form](/responsive-web-design/survey-form.html)
   * [Product Landing Page](/responsive-web-design/product-landing-page.html)
-  * [Technical Documentation Page](/responsive-web-design/technical-documentation-page.html) *(in progress)*
+  * [Technical Documentation Page](/responsive-web-design/technical-documentation-page.html)
+  * [Personal Portfolio Webpage](/responsive-web-design/personal-portfolio-webpage.html)
